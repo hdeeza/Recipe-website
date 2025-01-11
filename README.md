@@ -1,5 +1,5 @@
 # Recipe-website
-**Description**:This project is a web page designed using HTML, CSS and JavaScript to fetch data using API,displaying a responsive layout and modern design elements.
+**Description**:This project is a web page designed using HTML, CSS and JavaScript to fetch data using API,displaying a responsive layout and modern design elements.It's a recipe website where variety of meals are displayed along with their names(title), description, ingredients and measurement also displaying the images of the meals and a tutorial video at the bottom of each meal card.
 
 ##Table of Contents
 
@@ -19,13 +19,11 @@
 
 This project is built using HTML, CSS and JavaSript and provides a visually appealing and responsive layout for a webpage.It includes sections such as:
 
--A header with navigation .
--A hero section with text.
--A  choose us section with images and content.best destination section with cards and descriptions.
--An offer section with cards and decription.
--A review section with images, content and names.
--A blog container with images, title's and descriptions.
--A footer with additional links, logo and information.
+-A container section .
+-A meal-list div.
+-A meal cards with images, titles and description.
+-A list containing meal ingredients and decription.
+-A meal-video link with content and names of meals.
 
 ## Live-Demo
 -Check out the live Demo of the Project:[LiveDemo](https://hotel-app-lgmw.onrender.com)
@@ -41,19 +39,20 @@ This project is built using HTML, CSS and JavaSript and provides a visually appe
 
 -**Reasponsive Design**.The layout adjusts to various screen sizes using media queries.
 -**Custom Properties**: Utilizes CSS variables for theme colors, making it easy to adjust the overall color scheme.
--**Modern Typography**:Uses "Montserrat" fonts for clean and modern look.
+-**Modern Typography**:Uses "Arial, Helvetica, sans-serif" fonts for clean and modern look.
 -**Flexbox Layout**:Ensures elements are properly aligned and spaced,creating a balanced design and neatness.
 -**JavaScript**:Uses javascript for interactivity.
+-**API**:Uses API for communication between softwares and allows users to fetch data from servers.
 
 ## Setup Istructions
 1.**Clone the Repository**:
 ```bash
-git clone https://github.com/hdeeza/Hotel-website-mobile.git
+git clone https://github.com/hdeeza/Recipe-website
 ```
 
 2.**Navigate to the project Directory**:
 ```bash
-cd Hotel-website-mobile
+cd Recipe-website
 ```
 
 3.**Open the HTML File**:
@@ -61,44 +60,35 @@ Open `index.html`in you preferred web browser to view the project.
 
 ## Usage
 
--The CSS file(`style.css`)includes various sections with classes that define the layout and styles for the webpage.
+-The CSS file(`style.css`)includes  sections with classes that define the layout and styles for the webpage.
 -To make any adjustments,edit the `style.css`file,and the changes will immediately reflect on the webpage upon refreshing the browser.
--The JavaScript contains the hanburger menu and also allows interactivity.
+-The JavaScript contains the code for fetched data and the meal-link.
 
 ### Key HTML Structure
 
 Here's a quick outline of the key HTML structure:
 ```html
-<header>
-         <button id="menuToggle" class="menu-toggle">&#9776;</button>
-         <h1 class="banner">Your<span class="logo">.logo</span></h1>
-    <div class="profile-icon">
-         <img  src="./images/icon (2).svg" alt="">
-        <nav id="navMenu" class="nav-menu">
-              <button id="closeMenu" class="close-menu">&times;</button>
-        <!--Add navigation links-->
-        </nav>
-    <div>
-    </header>
-    <section class="hero">
-            <h1>Find an apartment <br> for your vacation</h1>
-            <p>We have several thousand <br> apartments for every taste <br>in every corner of the globe.</p>
-     </section>
-            <div class="container">
-                 <h2>Special Offers</h2>
-             <!--offer images and content-->
-             </div>
-    <section class="Reviews">
-          <div class="review">
-                <!--review section-->
-    </section>
-    <div class="blog-container">
-         <div class="posts">
-              <h2>Recent posts</h2>
+    <div class="container">
+        <h1>Meal Finder</h1>
+      <div id="meal-list" class="meal-list">
+          <div class="meal-card">
+               <!-- meal-images -->
+               <h2 class="meal-title">Chicken Handi
+                     <!-- meal-title wil be here -->
+               </h2>
+               <p class="meal-description">
+                   <!-- meal-description will be here -->
+               </p>
+               <ul class="meal-ingredients">
+                    <!-- meal-ingredients will be here --> 
+                </ul>
+                <a href= "https://www.youtube.com/watch?v=IO0issT0Rmc" target="_blank" class="meal-video-link">
+                    <!-- meal-video link will be here -->
+                </a>
+        </div>
      </div>
-    <footer>
-             <!--Footer content-->
-    </footer>
+     </div>
+     </div>            
 ```
 ### Key CSS Styles
 -The CSS code starts with the universal code.
