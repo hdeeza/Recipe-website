@@ -26,7 +26,7 @@ This project is built using HTML, CSS and JavaSript and provides a visually appe
 -A meal-video link with content and names of meals.
 
 ## Live-Demo
--Check out the live Demo of the Project:[LiveDemo](https://hotel-app-lgmw.onrender.com)
+-Check out the live Demo of the Project:[LiveDemo](https://recipe-website-cans.onrender.com)
 -check out the loom video
 
 ## Technologies Used
